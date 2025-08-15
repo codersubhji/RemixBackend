@@ -290,7 +290,7 @@ router.get("/auth/redirect", async (req, res) => {
     );
 
     const userStr = encodeURIComponent(JSON.stringify(userResponse.data));
-    res.redirect(`https://creative-halva-50e345.netlify.app/dashboard?user=${userStr}`);
+    res.redirect(`https://rimex-asteritech.netlify.app/dashboard?user=${userStr}`);
   } catch (err) {
     console.error(
       "Error during token exchange or user fetch",

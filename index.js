@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(
   cors({
     origin: [
-      "https://creative-halva-50e345.netlify.app"
+      "https://rimex-asteritech.netlify.app"
     ],
   })
 );

@@ -289,10 +289,8 @@ router.get("/auth/redirect", async (req, res) => {
       }
     );
 
-    // Redirect to frontend home page with user info as query param
-    const FRONTEND_URL = "https://jolly-concha-dc4e1e.netlify.app";
     const userStr = encodeURIComponent(JSON.stringify(userResponse.data));
-    res.redirect(`https://jolly-concha-dc4e1e.netlify.app/dashboard?user=${userStr}`);
+    res.redirect(`https://creative-halva-50e345.netlify.app/dashboard?user=${userStr}`);
   } catch (err) {
     console.error(
       "Error during token exchange or user fetch",

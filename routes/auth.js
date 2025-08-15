@@ -291,7 +291,7 @@ router.get("/auth/redirect", async (req, res) => {
 
     // Redirect to frontend home page with user info as query param
     const userStr = encodeURIComponent(JSON.stringify(userResponse.data));
-    res.redirect(`/frontend/home.html?user=${userStr}`);
+    res.redirect(`https://remix-asteri-tech-fyephchsgtd6h6ha.canadacentral-01.azurewebsites.net/dashboard/?user=${userStr}`);
   } catch (err) {
     console.error(
       "Error during token exchange or user fetch",

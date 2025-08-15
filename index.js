@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(
   cors({
     origin: [
-      "https://remix-asteri-tech-fyephchsgtd6h6ha.canadacentral-01.azurewebsites.net"
+      "https://creative-halva-50e345.netlify.app"
     ],
   })
 );
